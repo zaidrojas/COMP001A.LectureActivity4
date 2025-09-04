@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- head section -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms</title>
 </head>
+
+<!-- body section -->
 <body>
     
+<header>
+<nav>
+    <caption>Where we have the forms</caption>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="media.html">Media</a></li>
+    </ul>
+</nav>
+</header>
+
+<main>
+    <form action="/submit" method="post">
+        <!-- Label and text for username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+        <br>
+
+        <!-- Label and text for passwords -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br>
+
+        <!-- Label and text for email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+        <br>
+
+        <!-- Label and text for number -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="100">
+        <br>
+
+        <!-- Label and text for gender selection -->
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <br>
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <br>
+
+        <!-- Checkbox for newsletter subscription -->
+        <label for="subscribe">Subscribe to newsletter</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <br>
+
+        <!-- Dropdown select for country -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+        </select>
+
+        <!-- Textarea for additional comments -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" ></textarea>
+        <br>
+
+        <!-- File input for uploading files -->
+        <label for="file-upload">Upload a photo:</label>
+        <input type="file" id="file" name="file">
+        <br>
+
+        <!-- Hidden input field (not visible to users) -->
+        <input type="hidden" name="userid" value="12345">
+        <br>
+
+        <!-- Range input for selecting a value within a range -->
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="10">
+        <br>
+
+        <!-- Date input for selecting a date -->
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate">
+        <br>
+
+        <!-- Color input for selecting a color -->
+        <label for="favcolor">Favorite Color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+        <br>
+
+        <!-- Submit button to send the form data -->
+        <input type="submit" value="Submit">
+
+        <!-- Reset button to clear the form -->
+        <input type="reset" value="Reset">
+    </form>
+</main>
+
+<footer>
+    <li><a href="https://github.com/zaidrojas">Visit my github</a></li>
+    <p>Copyright © 2025 Paperclip. All rights reserved.</p>
+</footer>
+
 </body>
+
 </html>

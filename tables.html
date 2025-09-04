@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- head section -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tables</title>
 </head>
+
+<!-- body section -->
 <body>
     
+<header>
+<nav>
+    <caption>Tables Below</caption>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="media.html">Media</a></li>
+    </ul>
+</nav>
+</header>
+
+<main>
+    <div id="table1">
+        <table style="width: 1000px;">
+            <caption>Table with absolute width values</caption>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>Data 1.1</td>
+                <td>Data 1.2</td>
+            </tr>
+            <tr>
+                <td>Data 2.1</td>
+                <td>Data 2.2</td>
+            </tr>
+            <tr>
+                <td>Data 3.1</td>
+                <td>Data 3.2</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div id="table2">
+        <table style="width: 100%;">
+            <caption>Table with relative width values</caption>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>Data 1.1</td>
+                <td>Data 1.2</td>
+            </tr>
+            <tr>
+                <td>Data 2.1</td>
+                <td>Data 2.2</td>
+            </tr>
+            <tr>
+                <td>Data 3.1</td>
+                <td>Data 3.2</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div id="table3">
+        <table style="width: 100%;">
+            <caption>Responsive table with merged cells</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Header 1</th>
+                    <th colspam="2">Header 2</th>
+                </tr>
+                <tr>
+                    <th>Subheader 1</th>
+                    <th>Subheader 2</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>Data 1.1</td>
+                <td>Data 1.2</td>
+            </tr>
+            <tr>
+                <td>Data 2.1</td>
+                <td>Data 2.2</td>
+            </tr>
+            <tr>
+                <td>Data 3.1</td>
+                <td>Data 3.2</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<footer>
+    <li><a href="https://github.com/zaidrojas">Visit my github</a></li>
+    <p>Copyright © 2025 Paperclip. All rights reserved.</p>
+</footer>
+
 </body>
+
 </html>
